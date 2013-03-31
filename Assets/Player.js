@@ -13,5 +13,8 @@ function Update () {
 	var v : float = Input.GetAxis("Vertical");
 	
 	var walkDirection : Vector3 = (h * right + v * forward);
-	transform.TransformDirection(walkDirection);
+	
+	var walk : Vector3 = transform.TransformDirection(walkDirection);
+	print(walk*100);
+	transform.rigidbody.AddForce(walk*100);
 }
