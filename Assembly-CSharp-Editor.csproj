@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5A460248-03C2-D0A3-ED99-469F6C1E582E}</ProjectGuid>
+	<ProjectGuid>{23D7381E-549F-FEE2-320B-0DD5E394BE8A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,14 +44,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player.js" />
-     <Compile Include="Assets\Scripts\WorldExpander.js" />
-     <Compile Include="Assets\Tiles\Scripts\NewTile.js" />
-     <Compile Include="Assets\Tiles\Scripts\NewTileFactory.js" />
-     <Compile Include="Assets\Tiles\Scripts\Tile.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileCollider.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileFactory.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileGen.js" />
+     <Compile Include="Assets\Editor\Build.cs" />
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{5A460248-03C2-D0A3-ED99-469F6C1E582E}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
