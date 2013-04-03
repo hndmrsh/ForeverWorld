@@ -1,11 +1,14 @@
 #pragma strict
 
 private var cameras : GameObject[];
+private var currentCam : int = 0;
 
 function Start(){
 	cameras = GameObject.FindGameObjectsWithTag("MainCamera");
-	for(var i : int = 1; i < cameras.length; i++){
-		cameras[i].SetActive(false);
+	for(var i : int = 0; i < cameras.length; i++){
+		if(i != currentCam){
+			cameras[i].SetActive(false);
+		}
 	}
 }
 
@@ -18,10 +21,9 @@ function Update () {
 
 function CheckOptionsKeys(){
 	if(Input.GetButtonUp("Switch Camera")){
-		print("cameras = " + cameras.Length);
-		for(var i : int = 0; i < cameras.length; i++){
-			cameras[i].SetActive(!cameras[i].activeSelf);
-		}
+		cameras[currentCam].SetActive(false);
+		currentCam = (currentCam + 1) % cameras.length;
+		cameras[currentCam].SetActive(true);
 	}
 }
 
