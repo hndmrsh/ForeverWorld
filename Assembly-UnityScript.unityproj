@@ -44,14 +44,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\NewTile.js" />
-     <Compile Include="Assets\Scripts\NewTileFactory.js" />
+     <Compile Include="Assets\Scripts\GUI.js" />
      <Compile Include="Assets\Scripts\Player.js" />
+     <Compile Include="Assets\Scripts\Tile.js" />
+     <Compile Include="Assets\Scripts\TileFactory.js" />
      <Compile Include="Assets\Scripts\WorldExpander.js" />
-     <Compile Include="Assets\Tiles\Scripts\Tile.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileCollider.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileFactory.js" />
-     <Compile Include="Assets\Tiles\Scripts\TileGen.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -55,3 +55,7 @@ function Walk(){
 	//print(walk*100);
 	transform.rigidbody.AddForce(walk*10);
 }
+
+function OnGUI() {	
+	GUI.Box (Rect (10,10,250,40), cameras[currentCam].name + " (" + (currentCam+1) + "/" + cameras.length + ")");
+}

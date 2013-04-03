@@ -3,7 +3,7 @@
 function OnTriggerEnter(other : Collider){
 	print("triggered");
 	
-	var tile : NewTile = other.GetComponent(NewTile);
+	var tile : Tile = other.GetComponent(Tile);
 	if(tile && tile.isFringe){
 		tile.GenerateTiles();
 	}

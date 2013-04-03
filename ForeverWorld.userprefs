@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Tiles\Scripts\NewTileFactory.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Tile.js">
     <Files>
-      <File FileName="Assets\Tiles\Scripts\NewTileFactory.js" Line="60" Column="2" />
+      <File FileName="Assets\Scripts\Player.js" Line="12" Column="3" />
+      <File FileName="Assets\Scripts\TileFactory.js" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\WorldExpander.js" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Tile.js" Line="8" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

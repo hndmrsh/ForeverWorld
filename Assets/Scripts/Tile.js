@@ -5,7 +5,7 @@ var y : int;
 var isFringe : boolean;
 
 function GenerateTiles() {
-	var factory = GameObject.FindGameObjectWithTag("Global").GetComponent(NewTileFactory);
+	var factory = GameObject.FindGameObjectWithTag("Global").GetComponent(TileFactory);
 
 	isFringe = false;
 	
