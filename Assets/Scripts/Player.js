@@ -51,5 +51,5 @@ function Walk(){
 	
 	var walk : Vector3 = transform.TransformDirection(walkDirection);
 	//print(walk*100);
-	transform.rigidbody.AddForce(walk*100);
+	transform.rigidbody.AddForce(walk*10);
 }
