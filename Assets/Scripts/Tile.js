@@ -3,6 +3,7 @@
 var x : int;
 var y : int;
 var isFringe : boolean;
+var type : String;
 
 function GenerateTiles() {
 	var factory = GameObject.FindGameObjectWithTag("Global").GetComponent(TileFactory);
@@ -13,6 +14,4 @@ function GenerateTiles() {
 	factory.GenerateTile(x,y-1); // S
 	factory.GenerateTile(x+1,y); // E
 	factory.GenerateTile(x-1,y); // W
-	
-	
 }
